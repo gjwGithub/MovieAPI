@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/movieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/movieImage"
+        android:layout_toRightOf="@+id/movieImage"
+        android:text="Name"
+        android:textSize="10pt"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/moviePopularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/movieName"
+        android:layout_alignStart="@+id/movieName"
+        android:layout_below="@+id/movieName"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:text="Popularity: "
+        android:textSize="7pt"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/movieGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/moviePopularity"
+        android:layout_alignStart="@+id/moviePopularity"
+        android:layout_below="@+id/moviePopularity"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:text="Genre: "
+        android:textSize="7pt"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
